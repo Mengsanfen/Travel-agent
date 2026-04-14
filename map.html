@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>高德地图示例</title>
+    <style>
+        html, body, #container {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+    </style>
+    <script src="https://webapi.amap.com/maps?v=2.0&key=a107b3f8e34d3d6d468e945cfb05c214"></script>
+</head>
+<body>
+<div id="container"></div>
+
+<script>
+    var map = new AMap.Map('container', {
+        zoom: 15,
+        center: [104.065861, 30.657401]
+    });
+
+    var marker = new AMap.Marker({
+        position: [104.065861, 30.657401],
+        title: "成都天府广场"
+    });
+
+    map.add(marker);
+</script>
+</body>
+</html>
